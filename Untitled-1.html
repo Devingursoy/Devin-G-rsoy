@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devin Gürsoy - Schornsteinfeger</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-...deineIntegrityHash..." crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <!-- Neues Logo hinzufügen -->
+            <img class="logo" src="https://i.ibb.co/MVdhwxK/SFM-1-1-1.png" alt="Devin Gürsoy Logo">
+            <h1>Devin Gürsoy</h1>
+            <h2>Ihr zuverlässiger Schornsteinfeger</h2>
+            <nav>
+                <ul>
+                    <li><a href="#startseite">Startseite</a></li>
+                    <li><a href="#dienstleistungen">Dienstleistungen</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="startseite" class="container">
+            <h2>Willkommen bei Devin Gürsoy</h2>
+            <p>Wir bieten professionelle Schornsteinfeger-Dienstleistungen für Ihr Zuhause oder Unternehmen. Vertrauen Sie auf unsere Erfahrung und Kompetenz.</p>
+        </section>
+        <section id="dienstleistungen" class="container">
+            <h2>Dienstleistungen</h2>
+            <p>Hier könnten Informationen zu Ihren Dienstleistungen stehen.</p>
+            <ul>
+                <li>Regelmäßige Schornsteininspektionen</li>
+                <li>Reinigung und Wartung von Kaminen</li>
+                <li>Beratung zur Rauchgasführung</li>
+                <li>Sicherheitsprüfungen und Zertifikate</li>
+            </ul>
+        </section>
+        <section id="kontakt" class="container">
+            <h2>Kontaktieren Sie uns</h2>
+            <p>Sie können uns per Telefon oder E-Mail erreichen:</p>
+            <ul>
+                <li><i class="fas fa-phone"></i> Telefon: 123-456-7890</li>
+                <li><i class="fas fa-envelope"></i> E-Mail: <a href="mailto:info@schornsteinfeger-guersoy.de">info@schornsteinfeger-guersoy.de</a></li>
+            </ul>
+            <p>Oder besuchen Sie uns in unserem Büro:</p>
+            <address>
+                <i class="fas fa-map-marker-alt"></i> Musterstraße 1<br>
+                12345 Musterstadt<br>
+                Deutschland
+            </address>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Devin Gürsoy - Schornsteinfegerfirma</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript für das Scrollen zu Ankerlinks -->
+    <script>
+        // JavaScript, um beim Klicken auf Links zu Ankerpunkten zu scrollen
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                const target = document.querySelector(this.getAttribute('href'));
+                target.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
